@@ -1,0 +1,15 @@
+//importar express.
+const express = require('express');
+
+//instanciar aplicação
+const server = express();
+
+//criando uma rota com o método get que é utilizado pelo navegador acessar
+//algum site
+server.get('/teste',() => {
+  console.log('teste');
+})
+//configurar porta que o servidor irá ouvir para chamada
+server.listen(3000);
+
+
